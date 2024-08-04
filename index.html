@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice</title>
+  <style>
+ 
+   
+
+    .container{
+      display: flex;
+      gap: 3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px ;
+      
+
+   
+    }
+    .left{
+      flex: 1;
+    }
+    .rigth{
+      flex: 1;
+    
+    
+    }
+    h1{
+      font-family: sans-serif;
+      font-size: 50px;
+      font-weight: 100px;
+      padding: 20px 30px 0;
+      margin: 10px;
+      
+
+    }
+    p{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-weight:50px;
+     color: rgb(143, 140, 140);
+     padding: 0 30px 20px;
+     margin: 10px;
+     
+    }
+    .btn{
+      padding-left: 40px;
+  
+      
+    }
+   .btn-1-1{
+      background-color: blue;
+      color: white;
+   
+
+    }
+    button{
+      padding:10px 18px;
+      border-radius: 8px;
+      border: none;
+      border: 1px solid black;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .img{
+      margin: 10px;
+      display: block;
+      object-fit: cover;
+      position: relative;
+      left: 148px;
+    }
+    @media (max-width:1250px) {
+      .container{
+        flex-direction: column;
+        height: 100%;
+        
+      }
+      .left{
+        text-align: center;
+      }
+      .img{
+        position: relative;
+        left: 0px;
+      }
+    
+    }
+  </style>
+</head>
+<body>
+ <section class="container">
+
+    <div class="left">
+      <h1>Responsive left- <br> aligned hero with <br> image</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod voluptatum, nostrum tempora natus tempore officiis iste, explicabo adipisci maxime itaque nemo? Facilis illo nihil voluptatem ullam harum dolores quam ipsa quod maxime labore. Illo cupiditate praesentium quasi, repellendus dolore hic nulla voluptatem commodi? Itaque odit commodi fugiat nobis voluptate.</p>
+      <a class="btn" id="btn-1" href="#"><button class="btn-1-1">Primary</button></a>
+      <a class="btn"  href="#"><button>Defualt</button></a>
+    </div>
+
+    <div class="rigth">
+      <img   src="./dog-img.jpg" alt="img"  class="img"   height="400">
+    </div>
+
+
+ </section>
+  
+</body>
+</html>
